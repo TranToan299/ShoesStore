@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Modal from './Component/Modal';
 import Shopshoes from 
 './Component/Shopshoes';
 import ShopShoesTemplate from './Component/ShopShoesTemplate';
@@ -13,7 +14,7 @@ root.render(
   <Routes>
     <Route path='' element={<ShopShoesTemplate/>}>
       <Route index element= {<Shopshoes/>}/>
-
+      <Route path='cart' element = {<Modal/>}/>
     </Route>
   </Routes>
   </BrowserRouter>
