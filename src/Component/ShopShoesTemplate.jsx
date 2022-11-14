@@ -46,13 +46,12 @@ export default class ShopShoesTemplate extends Component {
           }}>Home</NavLink>
           
           </button>
-          <button className="navigate " style= {{
+          {/* <button className="navigate " style= {{
              width:'320px',
              border:'2px solid aqua',
              textAlign:'left',
              backgroundColor:'#fff',
 
-            //  marginLeft:'7px'
           }}>
           <NavLink to='cart' style={{
             width:'95%',
@@ -64,7 +63,7 @@ export default class ShopShoesTemplate extends Component {
           
           }}>Shop</NavLink>
           
-          </button>
+          </button> */}
             
             </div>
         

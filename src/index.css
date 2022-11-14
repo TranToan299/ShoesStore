@@ -13,4 +13,9 @@ code {
     monospace;
 }
 
+.modal-body .info span {
+  font-weight: 400;
+  
+}
+
 

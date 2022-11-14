@@ -145,25 +145,25 @@ let data = [
 ];
 
 export default class ProductList extends Component {
+
   renderItem = (data) => {
-  let arrItem = data.map((item,index) => {
-    return (
-      <div className="col-4 mt-5 px-5" key = {index}>
-          <ProductItem item ={item}/>
+    let {thongTin,themSanPham} = this.props;
+
+    let arrItem = data.map((item, index) => {
+      return (
+        <div className="col-4 mt-5 px-5" key={index}>
+          <ProductItem item={item} xemChiTiet = {thongTin} themSanPham={themSanPham}/>
         </div>
-    ) 
-  })
-  return arrItem
-  }
+      );
+    });
+    return arrItem;
+  };
   render() {
+    let {thongTin} = this.props;
     return (
       <div className="container">
- <div className="item-list row">
-         {this.renderItem(data)}
-        </div>
+        <div className="item-list row">{this.renderItem(data)}</div>
       </div>
-       
-      
     );
   }
 }

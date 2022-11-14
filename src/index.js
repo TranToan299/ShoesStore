@@ -5,6 +5,7 @@ import Modal from './Component/Modal';
 import Shopshoes from 
 './Component/Shopshoes';
 import ShopShoesTemplate from './Component/ShopShoesTemplate';
+import Cart from './Component/Cart';
 import './index.css';
 
 
@@ -14,7 +15,7 @@ root.render(
   <Routes>
     <Route path='' element={<ShopShoesTemplate/>}>
       <Route index element= {<Shopshoes/>}/>
-      <Route path='cart' element = {<Modal/>}/>
+      {/* <Route path='cart' element = {<Cart/>}/> */}
     </Route>
   </Routes>
   </BrowserRouter>
